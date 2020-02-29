@@ -16,6 +16,7 @@ p {
 }
 
 a {
+  text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   text-align: left;
@@ -27,6 +28,14 @@ a {
 a:hover{
   text-decoration: none;
   color: grey;
+}
+.link {
+  width: 23px;
+  height: 18px;
+  margin-bottom: 10px;
+}
+.link:hover {
+  opacity: 50%;
 }
 
 .pic {
@@ -43,7 +52,7 @@ a:hover{
 
 .name {
   color: white;
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 10%;
   /* background-color: green; */
 }
