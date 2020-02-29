@@ -24,11 +24,6 @@ a {
   margin-right: 10px;
   /* margin-bottom: 1rem; */
 }
-
-a:hover{
-  text-decoration: none;
-  color: grey;
-}
 .link {
   width: 23px;
   height: 18px;
@@ -37,6 +32,12 @@ a:hover{
 .link:hover {
   opacity: 50%;
 }
+
+a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
 
 .pic {
   width: 400px;
