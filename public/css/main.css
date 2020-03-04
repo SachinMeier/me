@@ -6,13 +6,19 @@ head {
   background-color: white;
   height: 150px;
 }
-
 p {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   text-align: left;
   line-height: 1.5;
   font-size: 18px;
+}
+.intxt{
+  text-decoration: underline;
+}
+.intxt:hover{
+  text-decoration: none;
+  color: grey;
 }
 
 a {
@@ -24,15 +30,6 @@ a {
   margin-right: 10px;
   /* margin-bottom: 1rem; */
 }
-.link {
-  width: 23px;
-  height: 18px;
-  margin-bottom: 10px;
-}
-.link:hover {
-  opacity: 50%;
-}
-
 a:hover{
   text-decoration: none;
   color: grey;
@@ -53,8 +50,8 @@ a:hover{
 
 .name {
   color: white;
-  margin-top: 10px;
-  padding: 10%;
+  margin-top: 0px;
+  /* padding: 5%; */
   /* background-color: green; */
 }
 
