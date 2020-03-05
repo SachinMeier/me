@@ -1,10 +1,46 @@
+/* TOP */
+.top {
+  text-align: right;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  padding: 20px 40px;
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+.bars {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  float: right;
+}
+.dropdown{
+  display: none;
+  border: white 2px;
+  width: 100px;
+  background-color: black;
+  margin-top: 30px;
+  margin-left: -55px;
+  position: absolute;
+  color: white;
+  z-index: 1;
+}
+.dropdown a{
+  width: 100px;
+  text-align: right;
+  padding: 10px;
+}
+.menu:hover .dropdown {
+  display: block;
+}
+
+/* HOME */
 body {
   background-color: black;
   margin: 0 0 5%;
-}
-head {
-  background-color: white;
-  height: 150px;
 }
 p {
   font-family: 'Source Sans Pro', sans-serif;
@@ -20,7 +56,6 @@ p {
   text-decoration: none;
   color: grey;
 }
-
 a {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,27 +69,22 @@ a:hover{
   text-decoration: none;
   color: grey;
 }
-
-
 .pic {
   width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .image {
   /* background-color: red; */
   padding-top: 10%;
 }
-
 .name {
   color: white;
   margin-top: 0px;
   /* padding: 5%; */
   /* background-color: green; */
 }
-
 @media (min-width: 950px) {
   .image {
     float: left;
@@ -69,4 +99,54 @@ a:hover{
     padding-left: 50px;
     padding-right: 12%;
   }
+}
+
+
+/* STORE */
+.store-head {
+  height: 100px;
+}
+p.title {
+  text-align: center;
+  font-size: 32px;
+}
+.item {
+  display: inline-block;
+  margin: 15px 10px;
+  border: solid grey 2px ;
+}
+.item:hover {
+  border: solid grey 4px;
+}
+.item-img-div{
+  /* padding: 10%; */
+  width: 200px;
+}
+.item-cap {
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+.buy {
+  margin-left: 50px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: grey;
+}
+.buy:hover {
+  border: solid white 2px;
+}
+
+@media (min-width: 600px) {
+  .item-img {
+    width: 200px;
+    /* padding: 10px; */
+  }
+}
+
+/* TEMP */
+.title a{
+  font-size: 32px;
+  text-decoration: underline;
 }
