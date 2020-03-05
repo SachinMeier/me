@@ -8,7 +8,7 @@ I've since added several features including a personal store.
 <h3>Personal Use</h3>
 If you'd like to make your own personal site with just the main page, I'd 
 suggest cloning jules23/perso. Alternatively, remove all the store files,
-and remove the <code>app.get(...) functions from index.js for all undesired pages
+and remove the <code>app.get(...)</code> functions from index.js for all undesired pages
 
 <h3>Goals</h3>
 I plan to set up a BTCPayServer instance to serve the store on this site. 
