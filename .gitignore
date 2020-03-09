@@ -2,3 +2,6 @@ node_modules/
 npm-debug.log
 .DS_Store
 /*.env
+pyclient/merchant_token
+pyclient/*.pem
+*.pem

@@ -1,3 +1,15 @@
+function showInform(){
+  // console.log("Hello");
+  document.getElementById("inform").style.display = "block";
+  // document.write("Hello");
+}
+function hideInform(){
+  // console.log("Hello");
+  document.getElementById("inform").style.display = "none";
+  // document.write("Hello");
+}
+
+
 function adjustHeights(){
   if ($(window).width()>=950)
   {
@@ -16,3 +28,4 @@ adjustHeights();
 $(window).resize(function(){
   adjustHeights();
 });
+

@@ -1,51 +1,74 @@
 <%- include('partials/header') -%>
 <%- include('partials/top') -%>
+
 <div class="store-head">
 	<p class="title">
 		My Store
 	</p>
 </div>
-<div class="item">
+
+<div class="store-body">
+	<div class="item">
+		<div class="item-img-div">
+			<img class="item-img" src="/assets/storeitems/coffee.jpg">
+		</div>
+		<h5 class="itemtitle">Coffee</h5>
+		<p class="item-desc">
+			A Cup of Coffee.
+		</p>
+		<div>
+			<button onclick="showInform()" class="buy">BUY: $1.50</button>
+		</div>
+
+	</div>
+	<div class="item">
 	<div class="item-img-div">
-		<img class="item-img" src="/assets/pic.jpg">
+		<img class="item-img" src="/assets/storeitems/ticonderoga.jpg">
 	</div>
-	<div class="item-cap">
-		A Pic of Me.
-	</div>
+	<h5 class="itemtitle">Pencil</h5>
+	<p class="item-desc">
+		A Ticonderoga pencil. 
+	</p>
 	<div>
-		<form action="">
-			<button type="submit" class="buy">BUY: $1.50</button>
-		</form>
+		<button class="buy">BUY: $2.50</button>
 	</div>
 	
+	</div>
+	<div class="item">
+	<div class="item-img-div">
+		<img class="item-img" src="/assets/storeitems/vangogh.jpg">
+	</div>
+	<h5 class="itemtitle">Painting</h5>
+	<p class="item-desc">
+		A van Gogh.
+	</p>
+	<div>
+		<button class="buy">BUY: $2.50</button>
+	</div>
+	
+	</div>
 </div>
-<div class="item">
-	<div class="item-img-div">
-		<img class="item-img" src="/assets/pic.jpg">
+<form method="POST"  action="http://raspberrypi.local/api/v1/invoices" class="btcpay-form btcpay-form--block">
+  <input type="hidden" name="storeId" value="F2Jo84ppwtNrS1bKHsyJ6B4YwtcfP1qEem5stpEVoZsH" />
+  <input type="hidden" name="notifyEmail" value="sachin.meier@gmail.com" />
+  <input type="hidden" name="price" value="10" />
+  <input type="hidden" name="currency" value="USD" />
+  <input type="image" class="submit" name="submit" src="http://raspberrypi.local/img/paybutton/pay.svg" style="width:209px" alt="Pay with BtcPay, Self-Hosted Bitcoin Payment Processor">
+</form>
+
+<div class="inform" id="inform">
+	<div class="innerform">
+	<form action="test.php" method="POST">
+		<p class="information">Name:</p><input class="inputform" type="text" name="name">
+		<p class="information">Address line 1:</p><input class="inputform" type="text" name="addr1">
+		<p class="information">Address line 2:</p><input class="inputform" type="text" name="addr2">
+		<p class="information">State:</p><input class="inputform" type="text" name="state">
+		<p class="information">Country:</p><input class="inputform" type="text" name="country"><br><br>
+		<input class="submitbtn" type="submit"><button class="cancelbtn" onclick="hideInform()">Cancel</button>
+		<p class="disclaimer">*This information will not be stored anywhere. 
+			It will be used solely to ship purchases and contact buyer if necessary. Information deleted upon order fulfillment.</p>
+	</form>
 	</div>
-	<div class="item-cap">
-		A Pic of Me.
-	</div>
-	<div>
-		<form action="">
-			<button type="submit" class="buy">BUY: $2.50</button>
-		</form>
-	</div>
-	
-</div>
-<div class="item">
-	<div class="item-img-div">
-		<img class="item-img" src="/assets/pic.jpg">
-	</div>
-	<div class="item-cap">
-		A Pic of Me.
-	</div>
-	<div>
-		<form action="">
-			<button type="submit" class="buy">BUY: $2.50</button>
-		</form>
-	</div>
-	
 </div>
 
 
