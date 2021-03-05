@@ -18,8 +18,10 @@ function trackClicks(){
 
 function trackClick(name){
   rudderanalytics.track(
-    name + " Click", 
-    {},
+    "Click", 
+    {
+      value: name
+    },
     () => {console.log("in track call: " + name)}
   )
 }
