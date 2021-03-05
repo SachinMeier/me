@@ -9,6 +9,28 @@ function hideInform(){
   // document.write("Hello");
 }
 
+function trackResume(){
+  const resumeLink = document.querySelector("#resume");
+  resumeLink.addEventListener("click", function () {
+    rudderanalytics.track(
+      "Resume View", 
+      {},
+      () => {console.log("in track call")}
+    )
+  })
+}
+
+function trackPGP(){
+  const pgpLink = document.querySelector("#pgp");
+  pgpLink.addEventListener("click", function () {
+    rudderanalytics.track(
+      "Resume View", 
+      {},
+      () => {console.log("in track call")}
+    )
+  })
+}
+
 
 function adjustHeights(){
   if ($(window).width()>=950)
