@@ -13,12 +13,17 @@ function trackClicks(){
   const resumeLink = document.querySelectorAll(".track");
   resumeLink.forEach( function(currentValue, currentIndex, listObj) {
     addEventListener("click", function () {
-      rudderanalytics.track(
-        currentValue.id + " Click", 
-        {},
-        () => {console.log("in track call: " + currentValue.id)}
-      )});
+      trackClick(currentValue.id)
+      });
   });
+}
+
+function trackClick(name){
+  rudderanalytics.track(
+    name + " Click", 
+    {},
+    () => {console.log("in track call: " + name)}
+  )
 }
 
 function adjustHeights(){
