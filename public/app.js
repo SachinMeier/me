@@ -15,7 +15,7 @@ function trackResume(){
     rudderanalytics.track(
       "Resume View", 
       {},
-      () => {console.log("in track call")}
+      () => {console.log("in track call: resume")}
     )
   })
 }
@@ -26,7 +26,7 @@ function trackPGP(){
     rudderanalytics.track(
       "Resume View", 
       {},
-      () => {console.log("in track call")}
+      () => {console.log("in track call: pgp")}
     )
   })
 }
