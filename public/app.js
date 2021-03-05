@@ -9,28 +9,17 @@ function hideInform(){
   // document.write("Hello");
 }
 
-function trackResume(){
-  const resumeLink = document.querySelector("#resume");
-  resumeLink.addEventListener("click", function () {
-    rudderanalytics.track(
-      "Resume View", 
-      {},
-      () => {console.log("in track call: resume")}
-    )
-  })
+function trackClicks(){
+  const resumeLink = document.querySelectorAll(".track");
+  resumeLink.forEach( function(currentValue, currentIndex, listObj) {
+    addEventListener("click", function () {
+      rudderanalytics.track(
+        currentValue.id + " Click", 
+        {},
+        () => {console.log("in track call: " + currentValue.id)}
+      )});
+  });
 }
-
-function trackPGP(){
-  const pgpLink = document.querySelector("#pgp");
-  pgpLink.addEventListener("click", function () {
-    rudderanalytics.track(
-      "PGP Download",
-      {},
-      () => {console.log("in track call: pgp")}
-    )
-  })
-}
-
 
 function adjustHeights(){
   if ($(window).width()>=950)
@@ -46,8 +35,7 @@ function adjustHeights(){
 }
 
 adjustHeights();
-trackResume();
-trackPGP();
+trackClicks();
 
 $(window).resize(function(){
   adjustHeights();
