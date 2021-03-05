@@ -24,7 +24,7 @@ function trackPGP(){
   const pgpLink = document.querySelector("#pgp");
   pgpLink.addEventListener("click", function () {
     rudderanalytics.track(
-      "Resume View", 
+      "PGP Download",
       {},
       () => {console.log("in track call: pgp")}
     )
@@ -46,6 +46,8 @@ function adjustHeights(){
 }
 
 adjustHeights();
+trackResume();
+trackPGP();
 
 $(window).resize(function(){
   adjustHeights();
