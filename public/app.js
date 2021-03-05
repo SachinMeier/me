@@ -12,9 +12,7 @@ function hideInform(){
 function trackClicks(){
   const resumeLink = document.querySelectorAll(".track");
   resumeLink.forEach( function(currentValue, currentIndex, listObj) {
-    addEventListener("click", function () {
-      trackClick(currentValue.id)
-      });
+    currentValue.addEventListener("click", trackClick(currentValue.id));
   });
 }
 
