@@ -25,24 +25,3 @@ function trackClick(name){
     () => {console.log("in track call: " + name)}
   )
 }
-
-function adjustHeights(){
-  if ($(window).width()>=950)
-  {
-    var x = $(window).height();
-    $(".image").css("height",x);
-    $(".name").css("height",x);
-  }
-  else {
-    $(".image").css("height","auto");
-    $(".name").css("height","auto");
-  }
-}
-
-adjustHeights();
-trackClicks();
-
-$(window).resize(function(){
-  adjustHeights();
-});
-
