@@ -2,7 +2,8 @@
 
 <h2>A Personal Website</h2>
 
-This is a personal website I cloned from https://github.com/jules23/perso. I've since added several features including a personal store. 
+This is a personal website I cloned from https://github.com/jules23/perso. I've since added several features. 
+
 
 <h3>Personal Use</h3>
 If you'd like to make your own personal site with just the main page, I'd 
