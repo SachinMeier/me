@@ -13,14 +13,15 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static("public"));
+app.use(express.static(".well-known"));
 // app.use(express.static("php"));
 
 app.get("/",function(req,res){
   res.render("home");
 });
-app.get("/lightning", function(req, res){
-  res.render("ln");
- });
+// app.get("/lightning", function(req, res){
+//   res.render("ln");
+//  });
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
